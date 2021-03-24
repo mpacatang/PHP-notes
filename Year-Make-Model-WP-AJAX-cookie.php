@@ -85,7 +85,17 @@ function mark_set_cookie() {
 	}
 
 }
+
+// register the ajax action for authenticated users
+add_action('wp_ajax_mark_set_cookie', 'mark_set_cookie');
+
+// register the ajax action for unauthenticated users
+add_action('wp_ajax_nopriv_mark_set_cookie', 'mark_set_cookie');
+
 ?>
+
+
+
 <script>
 jQuery( document ).ready(function($) {
 
