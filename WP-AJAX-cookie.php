@@ -1,4 +1,4 @@
-
+<?php
 // Set Cookie AJAX
 function mark_set_cookie() {
 	// Just a basic botcheck to get rid of crawlers
@@ -85,6 +85,7 @@ function mark_set_cookie() {
 	}
 
 }
+?>
 <script>
 jQuery( document ).ready(function($) {
 
